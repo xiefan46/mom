@@ -1,0 +1,17 @@
+package netty;
+option java_package = "com.alibaba.middleware.race.mom.protobuf";
+
+
+message Message{
+	required string msgId = 1;
+	optional string topic = 2;
+	optional string body = 3;
+	optional string groupId = 4;
+	optional string filter = 5;
+	optional fixed64 bornTime = 6;
+	optional uint32 messageType = 7;
+	repeated string propertiesKey = 8;
+	repeated string propertiesValue = 9;
+}
+
+
